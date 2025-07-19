@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",            // ✅ Required for React 17+ with JSX
-    "module": "esnext",
-    "target": "esnext",
-    "lib": ["dom", "esnext"],      // ✅ Must include 'dom'
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "moduleResolution": "Node",
     "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["src"]
 }
