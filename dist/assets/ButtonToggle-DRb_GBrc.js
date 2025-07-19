@@ -1,2 +1,0 @@
-import{r,j as n}from"./index-DcZ0E0zD.js";function s(e=!1){const[t,o]=r.useState(e);return{value:t,toggle:o}}function a(){const{value:e,toggle:t}=s(!1),o=()=>{t(!e)};return n.jsx("div",{className:"flex items-center justify-center min-h-screen bg-gray-100",children:n.jsx("button",{onClick:o,"data-testid":"toggle-button",className:`px-6 py-2 rounded-full shadow-md transition-colors duration-300 text-white font-semibold 
-          ${e?"bg-green-500 hover:bg-green-600":"bg-red-500 hover:bg-red-600"}`,children:e?"ON":"OFF"})})}export{a as default};
