@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:3002/api'; // Replace with your backend URL
+const BASE_URL = 'https://backend-test-series-apis.onrender.com/api' //'http://localhost:3002/api'; // Replace with your backend URL
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
