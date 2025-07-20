@@ -55,7 +55,7 @@ export default function Register() {
     <Header/>
     <div className="min-h-screen flex items-center justify-center bg-lightcyan px-4">
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-6 sm:p-8">
-        <h2 className="text-2xl font-bold text-center mb-6">Register New Account</h2>
+        <h2 className="text-2xl font-bold text-center mb-6">Test Series Register New Account</h2>
         {error && <div className="text-red-500 mb-3 text-center">{error}</div>}
         <Formik
           initialValues={{
