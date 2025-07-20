@@ -1,0 +1,6 @@
+import{f as r}from"./createLucideIcon-6Xy3soj4.js";import{a as s,c as o,j as e}from"./index-bSBBOvG4.js";/**
+ * @license lucide-react v0.525.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const i=[["path",{d:"M12 2v4",key:"3427ic"}],["path",{d:"m16.2 7.8 2.9-2.9",key:"r700ao"}],["path",{d:"M18 12h4",key:"wj9ykh"}],["path",{d:"m16.2 16.2 2.9 2.9",key:"1bxg5t"}],["path",{d:"M12 18v4",key:"jadmvz"}],["path",{d:"m4.9 19.1 2.9-2.9",key:"bwix9q"}],["path",{d:"M2 12h4",key:"j09sii"}],["path",{d:"m4.9 4.9 2.9 2.9",key:"giyufr"}]],h=r("loader",i),l=()=>{const t=s(),a=o();return a.pathname==="/"||a.pathname==="/register"?e.jsxs("header",{className:"bg-white shadow-md py-4 px-6 flex justify-between items-center",children:[e.jsx("h1",{className:"text-xl font-bold text-blue-600 cursor-pointer",onClick:()=>t("/"),children:"Test Series"}),e.jsxs("div",{className:"flex gap-4",children:[e.jsx("button",{onClick:()=>t("/"),className:"px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white transition duration-200",children:"Login"}),e.jsx("button",{onClick:()=>t("/register"),className:"px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-200",children:"Register"})]})]}):null};export{l as H,h as L};
