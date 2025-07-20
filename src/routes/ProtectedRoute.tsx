@@ -17,11 +17,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ children, allowedRoles 
 
   const userRole = role?.toLowerCase();
 
-  console.log('userRole',userRole);
-  console.log('token',token);
-  console.log('allowedRoles',allowedRoles)
   const isAllowed = allowedRoles.map(role => role.toLowerCase()).includes(userRole ?? '');
-  console.log('isAllowed',isAllowed);
 
   if (!isAllowed) {
     return <Navigate to="/unauthorized" replace />;

@@ -34,7 +34,6 @@ const CreateNewTest = ({
   initialData?: any;
   isEditing?: boolean;
 }) => {
-  console.log('initialData',initialData)
   const dispatch = useDispatch<AppDispatch>();
 
   const initialValues = initialData
@@ -54,13 +53,11 @@ const handleSubmit = async (values: any) => {
   try {
     if (isEditing && initialData?._id) {
       await dispatch(updateTestSeries({ id: initialData._id, payload: values })).unwrap();
-      console.log('Test updated successfully');
       toast.success('Test updated successfully');
       onClose(); // Close modal on success
 
     } else {
       await dispatch(createTestSeries(values)).unwrap();
-      console.log('Test created successfully');
       toast.success('Test created successfully');
     }
   } catch (error) {

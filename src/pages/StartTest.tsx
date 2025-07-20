@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../app/store';
 import { fetchQuestionsForTest, submitLearnerTest } from '../app/slices/learnerTestSlice';
-
+import {toast } from 'react-toastify';
 export interface Question {
   _id: string;
   question: string;
@@ -101,6 +101,7 @@ const StartTest: React.FC<StartTestProps> = ({ test: testFromProps }) => {
         .unwrap()
         .then(() => {
           console.log('📊 Test submitted successfully');
+          toast.info('📊 Test submitted successfully')
         })
         .catch((err) => {
           console.error('Submission failed:', err);

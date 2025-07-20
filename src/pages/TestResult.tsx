@@ -11,7 +11,6 @@ const TestResult: React.FC = () => {
 
   const { user } = useSelector((state: RootState) => state.users);
   const { result, loading, error } = useSelector((state: RootState) => state.learnerTest);
-    console.log('result',result);
   useEffect(() => {
     if (user && testId ) {
       dispatch(fetchTestResult({ userId: user.id, testId }));
