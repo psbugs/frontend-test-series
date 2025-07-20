@@ -4,15 +4,15 @@ import { navLinks } from '../utils/common-constants';
 import  ProtectedRoute  from './ProtectedRoute';
 import StartTest from '../pages/StartTest';
 import TestResult from '../pages/TestResult';
+import Loader from '../components/Loader';
 
 const Login = lazy(() => import('../pages/Login'));
 const AdminDashboard = lazy(() => import('../pages/AdminDashboard'));
 const LearnerDashboard = lazy(() => import('../pages/LearnerDashboard'));
 const Unauthorized = () => <div className="p-4 text-center text-red-600 font-bold">Unauthorized Access</div>;
-
 export default function AppRoutes() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loader />}>
         <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/unauthorized" element={<Unauthorized />} />

@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 
 import { login } from '../app/slices/usersSlice';
 import { AppDispatch, RootState } from '../app/store';
+import { Loader } from 'lucide-react';
 
 const LoginSchema = Yup.object().shape({
   email: Yup.string().email('Invalid email').required('Email is required'),
@@ -35,6 +36,7 @@ export default function Login() {
   };
 
   return (
+    <>
     <div className="min-h-screen flex items-center justify-center bg-lightcyan px-4">
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-6 sm:p-8">
         <h2 className="text-2xl font-bold text-center mb-6">Test Series Login</h2>
@@ -75,10 +77,12 @@ export default function Login() {
               >
                 {loading ? 'Logging in...' : 'Login'}
               </button>
+              {loading && <Loader />}
             </Form>
           )}
         </Formik>
       </div>
     </div>
+    </>
   );
 };
