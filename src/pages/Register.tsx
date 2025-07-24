@@ -42,7 +42,6 @@ export default function Register() {
           role: values.role,
         })
       ).unwrap();
-
       toast.success(res.message || 'Registration successful');
       navigate('/');
     } catch (err: any) {

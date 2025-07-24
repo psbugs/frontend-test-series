@@ -1,6 +1,10 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://backend-test-series-apis.onrender.com/api' //'http://localhost:3002/api'; // Replace with your backend URL
+console.log('process.env.NODE_ENV',process.env.NODE_ENV)
+const BASE_URL =
+  process.env.NODE_ENV  === 'production'
+    ? 'https://backend-test-series-apis.onrender.com/api'
+    : 'http://localhost:3002/api';
 
 const axiosInstance = axios.create({
   baseURL: BASE_URL,
